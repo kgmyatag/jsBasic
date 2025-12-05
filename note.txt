@@ -1,0 +1,47 @@
+Day-1
+    JavaScript Introduction
+
+    JavaScript Script
+    1. Inline Script (HTML Element)
+    2. Intercal Script (<script></script>)
+    3. External Script (Js File -> HTML Document -> src)
+
+    Variables -> var, let, const
+    Variable Format
+    Redeclare -> var (not recommend)
+    Reassign -> var, let
+    Not Redeclare/Reassign -> const
+
+    Data Types -> typeof (to check what kind of data type)
+    1. String    - "" ''
+    2. Number    - 1 2 3 4 5 1.2 3.5 6.8 (int | float -> just for knowledge)
+    3. Boolean   - true | fasle
+    4. Undefined - not assigned value to Variables
+    5. Null      - Null Data Type
+
+Day-2
+    Comments
+        //, /* */
+
+    Operators
+        1. Arithmetic Operators => +, -, *, /, %, **, ++, --
+        2. Assignment Operators => =, +=, -=, *=, /=, %=
+        3. Comparison Operators => ==, ===, !=, !==, >, <, >=, <=
+        4. Logic Operators      => &&, ||, !
+        5. Ternary Operators    => condition ? true_value : false_value;
+
+    Conditional Statements
+        1. if statement         Simple One Condition
+        2. if..else statement   Two outcomes
+        3. else if statement    Multiple conditions
+        4. nested if            (Condition inside condition)
+        5. switch               Many options (menu-like)
+
+    Looping
+        1. for loop             Count-based tasks
+        2. while loop           Condition-based tasks
+        3. do while loop        Run once before checking
+        4. for...of             Arrays
+        5. for...in             Objects
+        6. break                Stop loop
+        7. continue             Current loop skip
