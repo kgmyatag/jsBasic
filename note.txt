@@ -45,3 +45,12 @@ Day-2
         5. for...in             Objects
         6. break                Stop loop
         7. continue             Current loop skip
+
+    Function
+        1. function declaration
+        2. function with parameters
+        3. function with return value
+        4. function with default parameters
+        5. function expression
+        6. arrow function (es6)
+        7.
