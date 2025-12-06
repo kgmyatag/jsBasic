@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Arrays</title>
+  </head>
+  <body>
+    <script>
+      //   const colors = new Array("Orange","Yellow","Green","Red","Blue")
+      //   const colors = ["Orange", "Yellow", "Green", "Red", "Blue"];
+
+      //   let green_color = colors[2]; // Access item from array
+      //   console.log(green_color);
+
+      //   colors[0] = "Black"; // Update item to array
+      //   console.log(colors[0]);
+
+      //   const colors = new Array("Orange", "Yellow", "Blue");
+      //   console.log(colors[colors.length - 1]);
+
+      //   const users = [
+      //     ["KaungMyat Aung", 23, false],
+      //     ["Tun Aung", 32, true],
+      //   ];
+      //   console.log(users[1][0]);
+
+      //   const colors = ["Orange", "Yello", "Green", "Red"];
+      //   colors.push("Blue");
+      //   colors.pop();
+      //   colors.unshift("Orange");
+      //   colors.shift();
+      //   console.log(colors);
+
+      //   const colors = ["Orange", "Yellow", "Green", "Red", "Blue"];
+      //   console.log(colors.indexOf("Green"));
+      //   console.log(colors.includes("Yellow"));
+      //   colors.splice(2, 1); // Remove items from array
+      //   colors.splice(1, 0, "Black"); // Add item to array
+      //   colors.splice(1, 1, "White"); // Replace item
+      //   console.log(colors);
+
+      //   let colors = ["Orange", "Yellow", "Green"];
+      //   console.log(colors.join(",")); // Convert to string
+
+      //   const ary1 = ["One", "Two", "Three"];
+      //   const ary2 = ["Four", "Five", "Six"];
+      //   const result = ary1.concat(ary2);
+      //   const result = [...ary1, ...ary2];
+      //   console.table(result);
+
+      let colors = ["Orange", "Yellow", "Green"];
+      //   colors.map(function (color) {
+      //     console.log(color);
+      //   });
+      colors.forEach((val, ind) => {
+        console.log(ind + " " + val);
+      });
+    </script>
+  </body>
+</html>

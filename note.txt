@@ -53,4 +53,15 @@ Day-2
         4. function with default parameters
         5. function expression
         6. arrow function (es6)
-        7.
+
+Day-3
+    Array 
+        1. create array with new Array()
+        2. create array with []
+    Array Property & Methods
+        Property    => array.length
+        Methods     => push(argument), pop(), unshift(argument), shift()
+        Methods     => indexOf(element_name), includes(element_name)
+        Methods     => splice(index,element_count), splice(index, 0, new_element), splice(index, same_index, new_element)
+        Methods     => join("..."), concat(), spread(...) - Modern Merge
+        Methods     => sort(), reverse(), map(), forEach()
