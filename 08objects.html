@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Objects</title>
+  </head>
+
+  <body>
+    <script>
+      //   let user = {
+      //     name: "Kaung Myat Aung",
+      //     age: 23,
+      //     isMarried: false,
+      //     family: ["U Aung Soe Min", "Daw Tin Mar Win"],
+      //     about: function () {
+      //       return `My name is ${this.name} and I'm ${this.age} years old. My parents are ${this.family[0]} and ${this.family[1]}`;
+      //     },
+      //   };
+      //   console.log(user.name);
+      //   console.log(user["name"]);
+      //   user.isMarried = true;
+      //   console.log(user.isMarried);
+      //   user.city = "Yangon";
+      //   console.log(user);
+      //   delete user.city;
+      //   console.log(user);
+      //   console.log(user.about());
+      //   let users = {
+      //     id: 1,
+      //     name: "Kaung",
+      //     email: "example@gmail.com",
+      //     verified: true,
+      //     address: {
+      //       city: "Yangon",
+      //       phone: "091234567",
+      //     },
+      //     skills: ["JavaScript", "HTML", "CSS"],
+      //   };
+      //   for (let user in users) {
+      //     console.log(user);
+      //   }
+      //   let people = [
+      //     { name: "Kaung Myat Aung", age: 23, isMarried: false, city: "Yangon" },
+      //     { name: "Zin Min Ko Ko", age: 35, isMarried: true, city: "Bago" },
+      //     { name: "Thiha Soe", age: 28, isMarried: false, city: "Mandalay" },
+      //   ];
+      //   people.filter(function (person) {
+      //     if (person.isMarried === true) {
+      //       console.log(person);
+      //     }
+      //   });
+      // let user = { name: "Kaung Myat Aung", age: 23, isMarried: false };
+      // console.log(JSON.stringify(user));
+      let user = {
+        name: "KaungMyat Aung",
+        age: 23,
+        email: "kaungmyata582@gmail.com",
+        gender: "Male",
+        isMarried: false,
+      };
+      for (person in user) {
+        console.log(user[person]);
+      }
+      let student = ["Aung Aung", 18, "First Year"];
+      for (stu of student) {
+        console.log(stu);
+      }
+    </script>
+  </body>
+</html>

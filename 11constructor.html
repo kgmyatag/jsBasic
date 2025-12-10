@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Constructor</title>
+  </head>
+  <body>
+    <script>
+      // Car Constructor
+      function Car(name, price) {
+        this.name = name;
+        this.price = price;
+      }
+      // Car Prototype
+      Car.prototype.getName = function () {
+        return `Car name is ${this.name}.`;
+      };
+      // Car Prototype
+      Car.prototype.getPrice = function () {
+        return `Car price is ${this.price}.`;
+      };
+      // Toyota Constructor
+      function Toyota(name, price, model) {
+        Car.call(this, name, price);
+        this.model = model;
+      }
+      // Inherit Prototype
+      Toyota.prototype = Object.create(Car.prototype);
+      // Use Toyota Constructor
+      Toyota.prototype.constructor = Toyota;
+      Toyota.prototype.getInfo = function () {
+        return `${this.getName()} ${this.getPrice()} Model is ${this.model}.`;
+      };
+      // Instantiate Toyota Object
+      let toyota = new Toyota("Toyota Crown", "$15000", 2004);
+      console.log(toyota);
+
+      let user = {
+        getInfo: function () {
+          return `Name is ${this.name} and Age is ${this.job}.`;
+        },
+      };
+      //   Create Object
+      //   let user1 = Object.create(user);
+      //   user1.name = "Kaung Myat Aung";
+      //   user1.job = "Web Developer";
+      //   console.log(user1.getInfo());
+      let user1 = Object.create(user, {
+        name: { value: "KaungMyat Aung" },
+        job: { value: "Web Developer" },
+      });
+      console.log(user1.getInfo());
+    </script>
+  </body>
+</html>

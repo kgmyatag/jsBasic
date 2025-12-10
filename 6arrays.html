@@ -49,13 +49,33 @@
       //   const result = [...ary1, ...ary2];
       //   console.table(result);
 
-      let colors = ["Orange", "Yellow", "Green"];
+      // let colors = ["Orange", "Yellow", "Green"];
       //   colors.map(function (color) {
       //     console.log(color);
       //   });
-      colors.forEach((val, ind) => {
-        console.log(ind + " " + val);
+      // colors.forEach((val, ind) => {
+      //   console.log(ind + " " + val);
+      // });
+      let people = [
+        { name: "Alex" },
+        { name: "Bob", gender: "M" },
+        { name: "Tom", gender: "m" },
+        { name: "Mary", gender: "F" },
+      ];
+      let result = people.map((person) => {
+        if (person.gender) {
+          if (person.gender === "M" || person.gender === "m") {
+            person.gender = "Male";
+          }
+          if (person.gender === "F" || person.gender === "f") {
+            person.gender = "Femal";
+          }
+        } else {
+          person.gender = "Unknown";
+        }
+        return person;
       });
+      console.log(result);
     </script>
   </body>
 </html>

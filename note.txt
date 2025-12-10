@@ -65,3 +65,19 @@ Day-3
         Methods     => splice(index,element_count), splice(index, 0, new_element), splice(index, same_index, new_element)
         Methods     => join("..."), concat(), spread(...) - Modern Merge
         Methods     => sort(), reverse(), map(), forEach()
+
+    String
+        Property    => length
+        Methods     => str[index], chartAt(index), toUppercase(), toLowerCase(), concat(), trim(), trimStart(), trimEnd()
+        Methods     => substr(index,element_count), substr(index), split(" ")
+        Methods     => indexOf(), lastIndexOf(), includes(), search(), replace(), replaceAll()
+
+    Math
+        Property    => Math.E, Math.PI, Math.SQRT2
+        Methods     => Math.floor(x), Math.ceil(x), Math.round(x)
+        Methods     => Math.pow(x,y), Math.sqrt(x), Math.abs(x)
+        Methods     => Math.min(x,y,z,...), Math.max(x,y,z,....), Math.random()
+
+    Number
+        Methods     => Number(), toString(), toFixed(), valueOf()
+        Methods     => Number.parseInt(), Number.parseFloat(), Number.isInteger(), 

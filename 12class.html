@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Class</title>
+  </head>
+  <body>
+    <script>
+      class Car {
+        constructor(name, speed) {
+          this.name = name;
+          this.speed = speed;
+        }
+        getName() {
+          return `Car's name is ${this.name}.`;
+        }
+        getSpeed() {
+          return `Car's speed is ${this.speed}.`;
+        }
+      }
+      class Toyota extends Car {
+        constructor(name, speed, model) {
+          super(name, speed);
+          this.model = model;
+        }
+        getSpeed() {
+          return `Car speed is override.`;
+        }
+        getModel() {
+          return `Car's model is ${this.model}.`;
+        }
+      }
+      let toyota = new Toyota("Land Crusier", 250, 2020);
+      console.log(toyota.getName());
+      console.log(toyota.getSpeed());
+      console.log(toyota.getModel());
+    </script>
+  </body>
+</html>
